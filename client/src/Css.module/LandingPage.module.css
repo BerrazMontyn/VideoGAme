@@ -1,0 +1,45 @@
+.LandingContainer {
+  background-image: url(https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg);
+  background-image: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 250px;
+  min-height: 39vh;
+
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+.Bienvenido {
+  position: center;
+  top: 50%;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translateY(-20%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  background: linear-gradient(to-right, #e6075c, #ffeb07, #2196f3, #372435);
+  /* -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+  text-shadow: 0 0 10px rgba(7, 0, 0, 0.5);
+}
+.BtnStart {
+  display: inline-block;
+  text-decoration: none;
+  background: #dc143c;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-family: helvita;
+  font-weight: bold;
+  box-shadow: 0 8px 0 #ec2d53;
+  transition: all 0.2s;
+  color: #fff;
+}
+.BtnStart:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #dc143c;
+}

@@ -1,0 +1,90 @@
+.fondoVGCreate {
+  background-image: url("https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg");
+  background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.btnBackHome {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+
+  /* background: #eb94d0;
+  background-image: -webkit-linear-gradient(top, #6a6565, #f0a9da);
+  background-image: -moz-linear-gradient(top, #6a6565, #f0a9da);
+  background-image: -ms-linear-gradient(top, #6a6565, #f0a9da);
+  background-image: -o-linear-gradient(top, #6a6565, #eb94d0);
+  background-image: linear-gradient(to bottom, #6a6565, #f0a9da);
+  margin-top: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: auto;
+  margin-bottom: 1%;
+  box-shadow: rgb(46, 45, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+/* ---------------------------------------------------------------- */
+
+.tituloCreate {
+  color: rgb(102, 95, 120);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.label {
+  margin-right: 0.2cm;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 640;
+}
+
+.imput {
+  margin-bottom: 1%;
+  position: relative;
+}

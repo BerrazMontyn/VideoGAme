@@ -1,0 +1,82 @@
+.titulo {
+  color: rgb(237, 231, 219);
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 3rem auto;
+  background: rgba(255, 183, 0, 0.125);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.fondo {
+  background-image: url("https://media.rawg.io/media/games/83f/83f6f70a7c1b86cd2637b029d8b42caa.jpg");
+  background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 230vh;
+  background-attachment: fixed;
+  overflow: auto;
+  margin: 0%;
+}
+.formaCard {
+  flex-direction: row;
+  text-align: center;
+  text-rendering: auto;
+  margin-left: 3vh;
+  display: inline-block;
+}
+.btnCargaPersonajes {
+  margin-bottom: 4vh;
+
+  position: relative;
+  padding: 1em 1.8em;
+  outline: none;
+  border: 1px solid #bd0909;
+  background: hsla(36, 76%, 43%, 0);
+  color: #e9d81b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btnCargaPersonajes:hover {
+  box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+  transition-delay: 0.6s;
+}
+.btnCrea {
+  margin-top: 2cm;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(128, 102, 102);
+  background-color: rgba(255, 255, 255, 0.249);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnCrea:hover {
+  background-color: #d7c0119a;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btnCrea:active {
+  transform: translateY(-1px);
+}
+.btnCrea a:link {
+  text-decoration: none;
+  opacity: unset;
+}
+.sort {
+  padding-right: 3rem;
+}
